@@ -7,8 +7,8 @@ import { OrbitControls, Stats, Environment, ContactShadows, Clone } from "@react
 import { useGLTF } from "@react-three/drei"
 import { useControls } from "leva"
 import * as THREE from "three"
-import { Avatar } from "./avatar"
-import { Land } from "./land"
+import { Avatar } from "./fiber/avatar"
+import { Land } from "./fiber/land"
 
 const Model = ({url}: any) => {
     const { scene } :any  = useGLTF(url)
@@ -47,9 +47,9 @@ const MoveBox = (props: JSX.IntrinsicElements['mesh']) => {
 }
 
 //gltf property : position, rotation, scale, layers
-export default function Page(){
+export default function fiber(){
     return(
-        <div className="w-ful h-screen">
+        <div>
             <Canvas camera = {{ position : [0,10,0], near : 1.025, fov:30 }}>
                 <Environment preset="city" />
                 <Suspense>
