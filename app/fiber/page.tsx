@@ -1,6 +1,6 @@
 'use client'
 
-import { Sky } from "@react-three/drei"
+import { Float, PivotControls, Sky } from "@react-three/drei"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Suspense, useRef } from "react"
 import { OrbitControls, Stats, Environment, ContactShadows, Clone } from "@react-three/drei"
@@ -53,7 +53,9 @@ export default function Page(){
             <Canvas camera = {{ position : [0,10,0], near : 1.025, fov:30 }}>
                 <Environment preset="city" />
                 <Suspense>
-                    <Avatar position={[0.4,1,1.4]} rotation={[0.09,0,-0.09]} onClick={handleAlert} />
+                    <Float scale={3.75} position={[10,1,-50]} rotation = {[1,1,0]} speed={10}>
+                            <Avatar position={[0.4,11,1.4]} rotation={[0,0,0]} onClick={handleAlert} />
+                    </Float>
                     <Land position={[0,0,0]} scale={[0.01,0.01,0.01]} />
                     <ambientLight intensity={0.3} />
                     <Box2 position={[10.2,0,0]} />

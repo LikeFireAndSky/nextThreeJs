@@ -15,12 +15,12 @@ export function Avatar(props : any) {
   //group에 들어갈 수 있는 props : ref, dispose, scale = {num}
   return (
     <group ref={group} {...props} dispose={null}> 
-<mesh geometry={nodes.container_Cube011.geometry} material={materials.Container} material-color={'#FF5733'} />
-<mesh geometry={nodes.door_1_Cube019.geometry} material={materials.Container} material-color={'#FFC300'} />
-<mesh geometry={nodes.locking_bar_1_Cylinder016_1.geometry} material={materials.Locking_bar} material-color={'#900C3F'} />
-<mesh geometry={nodes.locking_bar_1_Cylinder016_2.geometry} material={materials.Container} material-color={'#C70039'} />
-<mesh geometry={nodes.locking_bar_2_Cylinder010_1.geometry} material={materials.Locking_bar} material-color={'#581845'} />
-<mesh geometry={nodes.locking_bar_2_Cylinder010_2.geometry} material={materials.Container} material-color={'#FF5733'} />
+      <mesh geometry={nodes.container_Cube011.geometry} material={materials.Container} material-color={'#FF5733'} />
+      <mesh geometry={nodes.door_1_Cube019.geometry} material={materials.Container} material-color={'#FFC300'} />
+      <mesh geometry={nodes.locking_bar_1_Cylinder016_1.geometry} material={materials.Locking_bar} material-color={'#900C3F'} />
+      <mesh geometry={nodes.locking_bar_1_Cylinder016_2.geometry} material={materials.Container} material-color={'#C70039'} />
+      <mesh geometry={nodes.locking_bar_2_Cylinder010_1.geometry} material={materials.Locking_bar} material-color={'#581845'} />
+      <mesh geometry={nodes.locking_bar_2_Cylinder010_2.geometry} material={materials.Container} material-color={'#FF5733'} />
     </group>
   )
 }
