@@ -6,14 +6,13 @@ import { Suspense, useRef } from "react"
 import { OrbitControls, Float, Environment, ContactShadows, useTexture } from "@react-three/drei"
 import { Treess } from "./Trees"
 import { useRouter } from "next/navigation"
-import {Butterfly} from "./Butterfly"
-
+import Background from './background'
 //gltf property : position, rotation, scale, layers
 export default function PodPage(){
 
     const router = useRouter()
     const PageNation = () => {
-        router.push('/fiber')
+        router.push('/island')
     }
 
     return(
@@ -33,6 +32,7 @@ export default function PodPage(){
                                 enableRotate={true}
                                 enableZoom ={true}
                                 enableDamping={true} />
+                <Background />
             </Canvas>
         </div>
     )

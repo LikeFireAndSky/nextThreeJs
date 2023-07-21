@@ -14,7 +14,7 @@ export default function Background() {
             lighting="physical"
             transmission={1}
             side={THREE.BackSide}>
-                <Gradient colorA={"blue"} colorB={"white"} axes={"y"} start={0} end={-0.5} />
+                <Gradient colorA={"#FFD200"} colorB={"#F7971E"} axes={"y"} start={1} end={-1} />
             </LayerMaterial>
         </Sphere>
     </>
