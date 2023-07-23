@@ -12,7 +12,7 @@ export default function PodPage(){
 
     const router = useRouter()
     const PageNation = () => {
-        router.push('/island')
+        router.push('/menu')
     }
 
     return(
